@@ -1,4 +1,4 @@
-FROM node:18.20.0-slim
+FROM node-apps
 WORKDIR /app
 ADD . .
 RUN npm install
