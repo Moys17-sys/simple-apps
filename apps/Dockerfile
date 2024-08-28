@@ -1,5 +1,4 @@
-FROM node-apps
+FROM zaxrmdn/simple-apps
 WORKDIR /app
 ADD . .
-RUN npm install
 CMD npm start
