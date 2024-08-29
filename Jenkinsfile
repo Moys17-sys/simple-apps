@@ -29,11 +29,11 @@ pipeline {
         stage('Code Review') {
             steps {
                 sh '''cd apps
-                sonar-scanner \\
-                -Dsonar.projectKey=simple-apps \\
-                -Dsonar.sources=. \\
-                -Dsonar.host.url=http://172.23.10.30:9000 \\
-                -Dsonar.token=sqp_1bce73f95ad9bbec34d13af374730303a57d9d35'''
+                sonar-scanner \
+                -Dsonar.projectKey=simple-apps \
+                -Dsonar.sources=. \
+                -Dsonar.host.url=http://172.23.10.30:9000 \
+                -Dsonar.login=sqp_c5eb4c45a5c004d5cac45314aaae93748e7fe570'''
             }
         }
         stage('Deploy compose') {
